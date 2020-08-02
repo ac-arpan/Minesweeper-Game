@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    font-family: 'Press Start 2P', cursive;
+}
+  
+.grid {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #dcd6bc;
+    margin-top: 20px;
+    border: 10px solid #dcd6bc;
+    margin-bottom: 10px;
+}
+
+.grid div{ 
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.valid {
+    height: 40px;
+    width: 40px;
+    border: 5px solid;
+    border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
+    box-sizing: border-box;
+
+}
+.checked {
+    height: 40px;
+    width: 40px;
+    border: 2px solid;
+    background-color: #cecab7;
+    border-color: #9c998d;
+    box-sizing: border-box;
+  }
+  
+
+.bomb {
+    height: 40px;
+    width: 40px;
+    border: 5px solid;
+    border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
+    box-sizing: border-box;
+}
+
+.flags {
+    margin-top: 2rem;
+    font-size: 25px;
+}
+  
+.message {
+    margin-top: 3rem;
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+}
+
+.one, .four, .seven {
+    color: rgba(224, 148, 6, 0.945);
+}
+.two, .six, .eight {
+    color: blue;
+}
+.three, .five {
+    color: red;
+}
+
+.scoreBoard{
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.table{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+.table table{
+    width: 100%;
+}
+.table thead {
+    background-color: rgb(51, 51, 51);
+    height: 22px;
+    font-size: 20px;
+    color: white;
+}
+.table thead th{
+    border: 1px solid black;
+    width: 50%;
+}
+.table tbody {
+    background-color: rgb(255, 239, 197);
+    margin-top: 1rem;
+    font-size: 10px;
+    color: black;
+}
+.table tbody tr {
+    height: 20px;
+    margin: 5px 0;
+}
+.table tbody td {
+    width: 50%;
+    font-size: 15px;
+    text-align: center;
+}
