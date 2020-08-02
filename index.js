@@ -17,18 +17,17 @@ function createBoard() {
     const bombArray = Array(bombAmount).fill('bomb')
     const emptyArray = Array(width*width - bombAmount).fill('valid')
     const gameArray = emptyArray.concat(bombArray)
-    const shuffledArray = gameArray.sort( () => Math.random() - 0.5)
+    const shuffledArray = gameArray.sort( () => Math.random() - 0.5)  // shuffling logic ;)
 
     for(let i = 0; i < width*width ; i++) {
         const square = document.createElement('div')
         square.setAttribute('id', i)
-        // square.textContent = i
         square.classList.add(shuffledArray[i])
         grid.appendChild(square)
 
         squares.push(square)
 
-        // Normal Click
+        // Normal Click(Left Click)
         square.addEventListener('click', e => {
             click(square)
         })
@@ -155,7 +154,7 @@ function click(square) {
 
 }
 
-// Check th neighbouring squares once one square is clicked
+// Check the neighbouring squares once one square is clicked, recursion is going on here
 function checkSquare(square, currentId) {
     const isLeftEdge = currentId % width === 0
     const isRightEdge = currentId % width === width - 1
