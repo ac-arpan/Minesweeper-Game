@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+body{
+    background: #e6e6e6;
+}
 .container {
     width: 500px;
     display: flex;
@@ -9,16 +12,25 @@
     margin: auto;
     font-family: 'Press Start 2P', cursive;
 }
+.info{
+    margin-top: 1rem;
+    padding: 10px;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+}
   
 .grid {
     height: 400px;
     width: 400px;
     display: flex;
     flex-wrap: wrap;
-    background-color: #dcd6bc;
     margin-top: 20px;
-    border: 10px solid #dcd6bc;
     margin-bottom: 10px;
+    background: transparent;
+    box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
+    -8px -8px 18px 0 rgba(255, 255, 255, 0.55);
+    cursor: pointer;
 }
 
 .grid div{ 
@@ -40,10 +52,11 @@
 .checked {
     height: 40px;
     width: 40px;
-    border: 2px solid;
-    background-color: #cecab7;
-    border-color: #9c998d;
+    border: none;
+    background-color: transparent;
     box-sizing: border-box;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
   }
   
 
@@ -54,7 +67,12 @@
     border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
     box-sizing: border-box;
 }
-
+.flag-container{
+    margin-top: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset 4px 4px 8px 0 rgba(0, 0, 0, 0.2), inset -13px -8px 18px 0 rgba(255, 255, 255, 0.55);
+}
 .flags {
     margin-top: 2rem;
     font-size: 25px;
@@ -82,13 +100,16 @@
     padding: 1rem;
     align-items: center;
     justify-content: center;
+    border-radius: 15px;
+    box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
+    -8px -8px 18px 0 rgba(255, 255, 255, 0.55);
 }
 .table{
     margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
+
 }
 .table table{
     width: 100%;
@@ -102,6 +123,7 @@
 .table thead th{
     border: 1px solid black;
     width: 50%;
+    padding: 4px 0;
 }
 .table tbody {
     background-color: rgb(255, 239, 197);
@@ -117,4 +139,11 @@
     width: 50%;
     font-size: 15px;
     text-align: center;
+}
+.icon{
+    margin-top: 1rem;
+    padding: 10px;
+    box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
 }

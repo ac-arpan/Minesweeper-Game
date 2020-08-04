@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mine Sweeper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+          
+
 </head>
 <body>
         <div class="container">
+            <div class="info">
+                <div style="text-align: center; font-size: 10px; margin-top: 2rem;">Right Click(PC)/Long Press(Mobile) <br> to flag a square</div>
+                <div class="icon" style="margin-top:1rem; text-align: center; cursor: pointer; "><span>Restart</span><i class="fa fa-refresh" style="margin-left: 5px;"></i></div>
+            </div>
             <div class="grid"></div>
-            <div><span style="font-size: 50px;">&#128681;</span> <span style="font-size: 20px;">Left:</span> <span class="flags" >20</span></div>
+            <div class="flag-container"><span style="font-size: 50px;">&#128681;</span> <span style="font-size: 20px;">Left:</span> <span class="flags" >20</span></div>
             <div class="message"></div>
             <div class="scoreBoard">
                 <h3 style="text-align: center;">Global ScoreBoard</h3>
@@ -22,24 +29,16 @@
                             </tr>
                             
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>arpan</td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td>john</td>
-                                <td>10</td>
-                            </tr>
+                        <tbody class="tbody">
+                            
                         </tbody>
                     </table>
                 </div>
             </div>
     
         </div>
-        
-        
-    
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
     <script src="./index.js"></script>
 </body>
 </html>
