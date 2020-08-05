@@ -22,6 +22,12 @@ const message = document.querySelector('.message')
 const tableBody = document.querySelector('.tbody')
 const refresh = document.querySelector('.icon')
 
+// musics
+let winAudio = new Audio('./musics/win.mp3')
+let bombAudio = new Audio('./musics/bomb.mp3')
+let bgAudio = new Audio('./musics/bg.mp3')
+
+
 let username
 let width = 10
 let bombAmount = 20
@@ -268,6 +274,7 @@ function checkSquare(square, currentId) {
 // gaveOver Function
 function gameOver(square) {
     // console.log('BOOM! Game Over...')
+    bombAudio.play()
     message.innerHTML = 'BOOM! Game Over!'
     message.style.fontSize = '30px'
     message.style.color = 'red'
@@ -307,6 +314,7 @@ function checkForWin() {
             matches++
         }
         if (matches === bombAmount) {
+            winAudio.play()
             message.innerHTML = "You WON!"
             message.style.fontSize = '40px'
             message.style.color = 'green'
